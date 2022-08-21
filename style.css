@@ -31,7 +31,7 @@ body{
     text-shadow:0 0 3px;  
     border-radius: 80%;
     position:relative;
-    top:10em;
+    left:-200px;
     margin:20%;
     height: fit-content;
    
@@ -69,7 +69,6 @@ body{
 .foot{
     display:flex;
     position:relative;
-    top:-0em;
     align-items:center;
     justify-content:last baseline;
     height: 10px;
@@ -82,13 +81,14 @@ body{
     height: 150px;
     top:-3em;
 
-    padding-right: 100px;
+    padding-right: 300px;
  }
 .ul2{
     display:inline-flex;
     justify-content: flex-end;
     position:relative;
     list-style: none;
+    padding-left: 200px;
 
 }
 
@@ -100,18 +100,23 @@ body{
     .ppal{
     background-size:cover;
     background-position:center,center;
-    height: 28em;
+    /* height: 28em; */
+    height:800px;
     }
     .otros{
         display:list-item;
     }
     .menu{ 
         position:relative;
-        top:10em;
+        top:21em;
         margin:10%;
         height:min-content;
     }
-
+    .ul2{
+        display:list-item;
+        top:-6em;
+    }
+    
 }
 
 @media(hover:hover){
@@ -124,6 +129,7 @@ body{
       
         color:rgb(12, 72, 42);
         text-decoration: none;
+
     
     }
     
