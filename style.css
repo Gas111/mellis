@@ -1,0 +1,134 @@
+body{
+    margin:0;
+    display:flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+
+    /* flex-wrap: wrap; se acomodan en la linea de abajo*/
+
+        
+}
+
+.ppal{
+    display:flex;
+    flex-wrap: wrap;
+    background-size:cover;
+    background-position: top,center;
+    background-repeat: no-repeat; 
+    height:600px;
+    width: 100%;
+  
+}
+
+
+.menu{ 
+    
+    font-family: 'Gloria Hallelujah', cursive;
+ 
+    font-style:italic;
+    font-weight: bold;
+    background-color: rgb(220, 165, 212);
+    text-shadow:0 0 3px;  
+    border-radius: 80%;
+    position:relative;
+    top:10em;
+    margin:20%;
+    height: fit-content;
+   
+}
+
+.ul1{
+    display:inline-flex;
+    flex-direction: row;
+    align-items:center;
+    width:200px ;
+    font-size: 150%;
+}
+
+.start{
+   padding:0.4em;
+   list-style: none;
+   padding-right: 30px;
+    
+}
+.otros{
+    width:100px; 
+    /* justify-content:space-between; */
+    list-style: none;
+    /* justify-content: space-between; */
+}
+
+.a2{
+    text-decoration: none;
+    color:white;
+}
+.astart{
+    text-decoration: none;
+    color:rgb(92, 152, 140);
+}
+.foot{
+    display:flex;
+    position:relative;
+    top:-0em;
+    align-items:center;
+    justify-content:last baseline;
+    height: 10px;
+    width:100%;
+  
+}
+.firma{
+    display: inline-flex;
+    position:relative;
+    height: 150px;
+    top:-3em;
+
+    padding-right: 100px;
+ }
+.ul2{
+    display:inline-flex;
+    justify-content: flex-end;
+    position:relative;
+    list-style: none;
+
+}
+
+
+
+@media(max-width:500px){
+
+
+    .ppal{
+    background-size:cover;
+    background-position:center,center;
+    height: 28em;
+    }
+    .otros{
+        display:list-item;
+    }
+    .menu{ 
+        position:relative;
+        top:10em;
+        margin:10%;
+        height:min-content;
+    }
+
+}
+
+@media(hover:hover){
+
+    .a2:hover{
+        text-decoration: none;
+        color:brown;
+    }
+    .astart:hover{
+      
+        color:rgb(12, 72, 42);
+        text-decoration: none;
+    
+    }
+    
+
+}
+
+
+
