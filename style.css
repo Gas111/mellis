@@ -102,6 +102,7 @@ body{
     background-position:center,center;
     /* height: 28em; */
     height:800px;
+    
     }
     .otros{
         display:list-item;
@@ -109,12 +110,14 @@ body{
     .menu{ 
         position:relative;
         top:21em;
+        left:0px;
         margin:10%;
         height:min-content;
     }
     .ul2{
         display:list-item;
         top:-6em;
+        left:-150px;
     }
     
 }
