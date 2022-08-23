@@ -15,24 +15,18 @@ header{
     width:100%;
 }
 main{
-    /* background-color:plum; */
+    background-color:plum;
     border-radius: 60%;
     display: inline-flex;
+    align-items:flex-end;
     justify-content: space-evenly;
-    width:50%;
     height:25vh;
-    width:40vw;
+    width:60vw;
     font-family: 'Gloria Hallelujah', cursive;
     font-style:italic;
     font-weight: bold;
     text-shadow:0 0 3px;  
   
-}
-.start{
-    background-color:plum;
-    border-radius: 60%;
-    width:20vw;
-
 }
 ul{    list-style: none; 
 }
@@ -44,18 +38,29 @@ ul{    list-style: none;
 
 
 .menu1{
+    display:inline-flex;
+    justify-content:flex-start;
+    align-items:center;
     color:rgb(92, 152, 140);
     text-decoration: none;
     font-size: 150%;
+    width:10vh;
+    height: 17vh;
     
 
 }
 .menu2{
+    display:flex;
     text-decoration: none;
     color:white;
     /* list-style: none; */
     font-size: 120%;
+    justify-content:space-between;
+    align-items:flex-start;
+    width:10vh;
+    height: 7.3vh;
     
+
 } 
 
 
@@ -122,7 +127,11 @@ footer
     }
 
     main{
-        width:30vw;
+        width:20vw;
+        height: 30vh;
+        align-items: flex-start;
+        justify-content: baseline;
+        
      
     }
     .icons{
@@ -134,20 +143,25 @@ footer
     
     .menu1{
     font-size: 180%;
+    height: 25vh;
+    align-items: center;
     
-
+   
     }       
     .menu2{
     font-size: 150%;
+    height: 7.7vh;
+    align-items:flex-start;
+    justify-items:flex-start;
     
     }
 
-@media (max-width:450px){
+@media (max-width:300px){
     .firma{
-        width:60%;
+        width:100%;
     }
     main{
-        width:80vw;
+        width:100vw;
       
     }
     ul{
@@ -155,4 +169,11 @@ footer
 
     }
     
-}
+    }   
+
+    @media (min-width:301px)and(max-width:749px)
+    {
+        main{
+        width:50vw;
+    }
+    }
