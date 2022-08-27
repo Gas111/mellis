@@ -1,18 +1,18 @@
 body{margin:0;
     display:flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+
+   
 }
 
 
 /* colores se sacana de color hunt web */
 section{
-    display:flex;
+    display:inline-flex;
+    justify-content: space-around;
     align-items: center;
     width: 100vw;
     height: 70vh;
-    justify-content: space-around;
     padding: 10%;
    
 }
