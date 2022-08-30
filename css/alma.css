@@ -1,20 +1,27 @@
+:root{
+
+    /* aca se pueden declarar variables */
+}
+
 body{margin:0;
     display:flex;
     flex-direction: column;
+    font-size: 62,8%; /*equivalente a 16px */
 
-   
 }
-
 
 /* colores se sacana de color hunt web */
 section{
     display:inline-flex;
+    flex-grow: 1;/*ocupan el espacio necesario */
     justify-content: space-around;
     align-items: center;
-    width: 100vw;
-    height: 70vh;
-    padding: 10%;
-   
+    /* width: 1; */
+    /* height: 70vh; */
+    padding: 15%;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 3.3vw;
 }
 .section1{
     background-color:#F7ECDE;
@@ -30,13 +37,88 @@ section{
     background-color:#54BAB9;
 }
 .section5{
-    background-color:#F2D7D9;
+    background-color:#E9DAC1;
+}
+.section6{
+    background-color:#E9DAC1;
+}
+.section7{
+    background-color:#9ED2C6;
+}
+.section8{
+    background-color:#54BAB9;
 }
 
+p{
+    }
 
 img{
     padding: 10%;
+    margin:10%;
     background-color:#F7ECDE;
-    width: 30vw;
-    height: 30vh;
+    width: 200px;
+    border-bottom-color: black;
+    border-bottom: 30%;
+    border-radius: 20%;
 }
+
+
+
+
+/* todo lo del navbar */
+nav{
+    align-items: center;
+    display: flex;
+    /* background-color:plum; */
+    background-image: linear-gradient(to right, rgb(250, 217, 244) , rgb(206, 229, 255));
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 800;
+    height:20vh;
+    justify-content: space-between;
+}
+nav div{
+    display:inline-flex;
+    justify-content: space-around;
+    font-style:oblique;
+}
+.divnav1{
+    font-size: larger;
+    padding-left: 5vw;
+    width: 20vw;
+}
+
+.divnav2{
+    width: 50vw;
+}
+
+
+@media (min-width:500px){
+
+    section{
+        font-size: 2.0vw;
+    }
+    
+    }
+    
+    @media (max-width:501px){
+    
+    img{
+        align-items:flex-start;
+       width: 4rem;
+    }
+    
+    nav{
+        height:40vh;
+  
+        }
+    nav div{
+        display:list-item;
+    
+    }
+    .divnav2{
+        list-style: none;    
+    }
+
+    
+    
+    }

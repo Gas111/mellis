@@ -5,30 +5,31 @@ body{
     justify-content:space-around;
     background-color: #F7ECDE;
     height:100vh;    
+    flex-wrap: wrap;
     
 }
 
 
 .uma{
-    display:flex;
+
     align-items:center;
-    width: 40vw;
-    height:80vh;
-    border-radius: 20%;    
+    height:70vh;
+    border-radius: 20%;
+    margin:10%;
+        
 }
 .alma{
-    display:block;
     align-items:center;
-    height:80vh;    
-    width: 40vw; 
-    border-radius: 20%;    
+    height:70vh;    
+    border-radius: 20%;
+    margin:10%;
+        
 }
 
 img{
     /* height: 100vh; */
-
-    height:80vh;    
-    width: 40vw; 
+    
+    height:60vh;    
     border-radius: 20%;  
 
 }
