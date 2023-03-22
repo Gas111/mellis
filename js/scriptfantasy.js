@@ -47,7 +47,7 @@ function setPosition(event) {
 
 // Limpiar el canvas
 function clearCanvas() {
-  context.clearRect(0, 0, context.canvas.width ,context.canvas.height)
+  context.clearRect(0, 0, context.canvas.width, context.canvas.height)
 }
 
 // Guardar el canvas como imagen
