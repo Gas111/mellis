@@ -2,6 +2,11 @@ const canvas = document.getElementById('canvas');
 canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 const context = canvas.getContext('2d');
+const colorInput = document.getElementById('color-input')
+
+// Inicializar el color
+let currentColor = '#000000'
+
 
 // Set up touch event listeners
 let touchX, touchY;
@@ -12,12 +17,29 @@ canvas.addEventListener('touchstart', (event) => {
 canvas.addEventListener('touchmove', (event) => {
   event.preventDefault();
   context.beginPath();
+  context.lineWidth = 5
+  context.lineCap = 'round'
+  context.strokeStyle = colorInput.value
   context.moveTo(touchX, touchY);
   touchX = event.touches[0].clientX;
   touchY = event.touches[0].clientY;
   context.lineTo(touchX, touchY);
   context.stroke();
 });
+
+function clearCanvas() {
+    context.clearRect(0, 0, context.canvas.width, context.canvas.height)
+  }
+  
+  // Guardar el canvas como imagen
+  function saveCanvas() {
+    const link = document.createElement('a')
+    link.download = 'canvas.png'
+    link.href = canvas.toDataURL()
+    link.click()
+  }
+
+
 
 // // Set up mouse event listeners (for testing on desktop)
 // let mouseX, mouseY;
