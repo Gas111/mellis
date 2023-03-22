@@ -1,118 +1,127 @@
-body{
+body {
     align-items: center;
     background-position: center top;
     background-size: cover;
     background-repeat: none;
     display: flex;
     flex-direction: column;
-    height:100vh;
-    margin:0;
- 
+    height: 100vh;
+    margin: 0;
+
 }
 
-header{
-    height:55vh;
-    width:100%;
+header {
+    height: 55vh;
+    width: 100%;
 }
-main{
-    background-color:plum;
+
+main {
+    background-color: plum;
     border-radius: 60%;
     display: inline-flex;
-    align-items:flex-end;
+    align-items: flex-end;
     justify-content: space-evenly;
-    height:25vh;
-    width:60vw;
+    height: 25vh;
+    width: 60vw;
     font-family: 'Gloria Hallelujah', cursive;
-    font-style:italic;
+    font-style: italic;
     font-weight: bold;
-    text-shadow:0 0 3px;  
-  
-}
-ul{    list-style: none; 
-}
-.vacio{
+    text-shadow: 0 0 3px;
 
-    width:30vw;
-    height:5vh;
 }
 
+ul {
+    list-style: none;
+}
 
-.menu1{
-    display:inline-flex;
-    justify-content:flex-start;
-    align-items:center;
-    color:rgb(92, 152, 140);
+.vacio {
+
+    width: 30vw;
+    height: 5vh;
+}
+
+
+.menu1 {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: rgb(92, 152, 140);
     text-decoration: none;
     font-size: 150%;
-    width:10vh;
+    width: 10vh;
     height: 17vh;
-    
+
 
 }
-.menu2{
-    display:flex;
+
+.menu2 {
+    display: flex;
     text-decoration: none;
-    color:white;
+    color: white;
     /* list-style: none; */
     font-size: 120%;
-    justify-content:space-between;
-    align-items:flex-start;
-    width:10vh;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 10vh;
     height: 7.3vh;
-    
-
-} 
 
 
-footer
-{   align-items:center;
+}
+
+
+footer {
+    align-items: center;
     /* background-color:rgb(149, 140, 113); */
     display: inline-flex;
     justify-content: space-between;
-    width:100%;
-    height:10vh;
-}
-.icons1{
-    display:flex;
-    align-items:flex-end;
-    height:10vh;
-    width:100vw; 
-}
-.icons2{
-    display: inline-flex;
-    align-items:flex-end;
-    height:10vh;
-    justify-content: space-around;
-    width:40vw; 
+    width: 100%;
+    height: 10vh;
 }
 
-.firma{
-    display:inline-flex;
-    height:10vh;
+.icons1 {
+    display: flex;
+    align-items: flex-end;
+    height: 10vh;
+    width: 100vw;
+}
+
+.icons2 {
+    display: inline-flex;
+    align-items: flex-end;
+    height: 10vh;
+    justify-content: space-around;
+    width: 40vw;
+}
+
+.firma {
+    display: inline-flex;
+    height: 10vh;
     width: 30vw;
     padding-left: 0%;
 }
-.copy{
+
+.copy {
     padding-right: 5%;
-    display:flex;
- 
+    display: flex;
+
 }
 
 /* efecto hover */
 
-@media(hover:hover){
+@media(hover:hover) {
 
-    .menu1:hover{
+    .menu1:hover {
         text-decoration: none;
-        color:rgb(176, 81, 81);
+        color: rgb(176, 81, 81);
     }
-    .menu2:hover{
-      
-        color:rgb(46, 122, 84);
+
+    .menu2:hover {
+
+        color: rgb(46, 122, 84);
         text-decoration: none;
 
-    
-    }   
+
+    }
 
 }
 
@@ -120,60 +129,64 @@ footer
 
 
 /* si es mayor a 750px cambia */
-@media (min-width:750px){
+@media (min-width:750px) {
 
-    body{
-        align-items:flex-start ;
+    body {
+        align-items: flex-start;
     }
 
-    main{
-        width:20vw;
+    main {
+        width: 20vw;
         height: 30vh;
         align-items: flex-start;
         justify-content: baseline;
-        
-     
-    }
-    .icons{
-        width:100%; 
-    }
-    ul{
-        display:list-item;
-    }
-    
-    .menu1{
-    font-size: 180%;
-    height: 25vh;
-    align-items: center;
-    
-   
-    }       
-    .menu2{
-    font-size: 150%;
-    height: 7.7vh;
-    align-items:flex-start;
-    justify-items:flex-start;
-    
-    }
 
-@media (max-width:300px){
-    .firma{
-        width:100%;
-    }
-    main{
-        width:100vw;
-      
-    }
-    ul{
-        display:list-item;
 
     }
-    
-    }   
 
-    @media (min-width:301px)and(max-width:749px)
-    {
-        main{
-        width:50vw;
+    .icons {
+        width: 100%;
     }
+
+    ul {
+        display: list-item;
+    }
+
+    .menu1 {
+        font-size: 180%;
+        height: 25vh;
+        align-items: center;
+
+
+    }
+
+    .menu2 {
+        font-size: 150%;
+        height: 7.7vh;
+        align-items: flex-start;
+        justify-items: flex-start;
+
+    }
+
+    @media (max-width:300px) {
+        .firma {
+            width: 100%;
+        }
+
+        main {
+            width: 100vw;
+
+        }
+
+        ul {
+            display: list-item;
+
+        }
+
+    }
+
+    @media (min-width:301px)and(max-width:749px) {
+        main {
+            width: 50vw;
+        }
     }

@@ -1,35 +1,131 @@
-body{
-    margin:0;
+:root {
+
+    /* aca se pueden declarar variables */
 }
-nav{
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 62, 8%;
+    /*equivalente a 16px */
+
+}
+
+
+
+/* todo lo del navbar */
+nav {
     align-items: center;
     display: flex;
-    background-color:plum;
+
+    /* background-color:plum; */
+    background-image: linear-gradient(to right, rgba(248, 193, 238, 0.879), rgb(248, 183, 241));
     font-family: 'Gloria Hallelujah', cursive;
     font-weight: 800;
-    height:20vh;
+    height: 10vh;
     justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
 }
-nav div{
-    display:inline-flex;
+
+nav div {
+    display: inline-flex;
     justify-content: space-around;
-    font-style:oblique;
+    font-style: oblique;
 }
-.divnav1{
+
+nav div a {
+    color: white;
+    font-size: 1.2rem;
+    outline: none;
+    text-decoration: none;
+}
+
+nav div a:hover {
+    color: rgb(176, 81, 81);
+
+}
+
+.divnav1 {
     font-size: larger;
     padding-left: 5vw;
     width: 20vw;
 }
 
-.divnav2{
+.divnav2 {
     width: 50vw;
 }
-@media(max-width:600px) {
-    nav{
-        height:40vh;
-        }
-    nav div{
-        display:list-item;
+
+
+@media (min-width:500px) {
+
+    section {
+        font-size: 2.0vw;
     }
 
- }
+}
+
+@media (max-width:501px) {
+
+    img {
+        align-items: flex-start;
+        width: 4rem;
+    }
+
+    nav {
+        height: 10vh;
+
+    }
+
+    nav div {
+        display: list-item;
+
+    }
+
+    .divnav2 {
+        list-style: none;
+    }
+
+
+
+}
+
+
+.color-pallet {
+    height: 20vh;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 10vh;
+    height: 90vh;
+    left: 0;
+    z-index: 10;
+
+}
+
+button {
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+canvas {
+    /* height: 100vh;
+    width: 100vw; */
+
+
+}

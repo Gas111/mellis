@@ -1,29 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fantasia</title>
-    <link rel="stylesheet" href="css/fantasy.css">
+    <link rel="stylesheet" href="/css/fantasy.css">
+    <!--fuente google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gloria+Hallelujah&display=swap"
+        rel="stylesheet">
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
 </head>
+
 <body>
     <nav>
-        <div class="divnav1"><h3>Inicio</h3></div>
-        <div class="divnav2"><h3>Historia</h3>
+        <div class="divnav1"><a href="../index.html">
+                <h3>STart</h3>
+            </a></div>
+        <div class="divnav2"><a href="../fantasy.html">
+                <h3>Painting</h3>
+            </a>
 
-            <h3>Start</h3><h3>Creditos</h3></div>
+            <a style="display:none;" href="../fdrawblocks.html">
+                <h3>No developed</h3>
+            </a><a style="display:none;" href="../drawedge.html">
+                <h3>No developed</h3>
+            </a>
+        </div>
     </nav>
-    <section>
-        <div></div>
-    </section>
-    <section>
 
-    </section>
-    <footer></footer>
+    <div style="display:flex;">
+
+
+        <div class="sidebar">
+            <div class="color-picker">
+                <input class="color-pallet" type="color" id="color-input" value="#000000">
+            </div>
+            <button onclick="clearCanvas()" style="display:flex; width:90%; height:20vh">Limpiar</button>
+            <button onclick="saveCanvas()" style="display:flex; width:90%; height:20vh">Guardar</button>
+        </div>
+        <canvas id="canvas" width="100vw" height="100vh"></canvas>
+        <!-- <canvas id="canvas" width="1200vw" height="550vh" style="width:80vw; height:80vh;"></canvas> -->
+    </div>
+
 
 </body>
+<script src="./js/scriptfantasy.js"></script>
+
 </html>

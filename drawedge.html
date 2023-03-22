@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dibujo interactivo</title>
+  <script async src="https://docs.opencv.org/master/opencv.js" onload="onOpenCvReady();" type="text/javascript"></script>
+  <script src="draw.js"></script>
+  <style>
+    #canvas {
+      border: 1px solid black;
+    }
+    #sidebar {
+      float: left;
+      width: 200px;
+      height: 100%;
+      border: 1px solid black;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="sidebar">
+    <h2>Paleta de colores</h2>
+    <div id="f">
+        <input type="color" id="color-picker" value="#000000">
+    </div>
+  </div>
+  <canvas id="canvas" width="1200vw" height="550vh" style="width:80vw; height:80vh;" ></canvas>
+  <!-- <canvas id="canvas" ></canvas> -->
+</body>
+</html>

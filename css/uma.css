@@ -1,0 +1,121 @@
+:root {
+
+    /* aca se pueden declarar variables */
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 62, 8%;
+    /*equivalente a 16px */
+
+}
+
+/* colores se sacana de color hunt web */
+section {
+    display: inline-flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15%;
+    font-family: 'Fredoka One', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 3.3vw;
+}
+
+.section1 {
+    background-color: #f6def7;
+
+}
+
+
+p {}
+
+img {
+    padding: 10%;
+    margin: 10%;
+    background-color: #F7ECDE;
+    width: 200px;
+    border-bottom-color: black;
+    border-bottom: 30%;
+    border-radius: 20%;
+}
+
+
+
+
+/* todo lo del navbar */
+nav {
+    align-items: center;
+    display: flex;
+
+    /* background-color:plum; */
+    background-image: linear-gradient(to right, rgba(248, 193, 238, 0.879), rgb(248, 183, 241));
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 800;
+    height: 10vh;
+    justify-content: space-between;
+}
+
+nav div {
+    display: inline-flex;
+    justify-content: space-around;
+    font-style: oblique;
+}
+
+nav div a {
+    color: white;
+    font-size: 1.2rem;
+    outline: none;
+    text-decoration: none;
+}
+
+nav div a:hover{
+    color: rgb(176, 81, 81);
+
+}
+
+.divnav1 {
+    font-size: larger;
+    padding-left: 5vw;
+    width: 20vw;
+}
+
+.divnav2 {
+    width: 50vw;
+}
+
+
+@media (min-width:500px) {
+
+    section {
+        font-size: 2.0vw;
+    }
+
+}
+
+@media (max-width:501px) {
+
+    img {
+        align-items: flex-start;
+        width: 4rem;
+    }
+
+    nav {
+        height: 40vh;
+
+    }
+
+    nav div {
+        display: list-item;
+
+    }
+
+    .divnav2 {
+        list-style: none;
+    }
+
+
+
+}

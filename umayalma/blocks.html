@@ -5,14 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creditos</title>
-    <link rel="stylesheet" href="/css/credits.css">
+    <title>Fantasia</title>
+    <link rel="stylesheet" href="./css/fdraw.css">
     <!--fuente google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Gloria+Hallelujah&display=swap"
         rel="stylesheet">
-
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,7 +25,7 @@
                 <h3>STart</h3>
             </a></div>
         <div class="divnav2"><a href="../history.html">
-                <h3>history</h3>
+                >history</h3>
             </a>
 
             <a href="../credits.html">
@@ -31,10 +35,22 @@
             </a>
         </div>
     </nav>
-    <section class="section1">
-        <div>
+
+
+    <div class="container">
+        <div class="canvas-wrapper">
+            <canvas id="canvas" width="1200vw" height="550vh" style="width:80vw; height:80vh;" ></canvas>
+            <img src="./img/drawimages/background-image.jpg" alt="Background Image" id="img">
         </div>
-    </section>
-    
+        <div class="sidebar" id="sidebar">
+            <div class="color-picker">
+                <input type="color" id="pallete" value="#000000">
+            </div>
+        </div>
+    </div>
+
+
 </body>
+<script src="./js/scriptfdraw.js"></script>
+
 </html>
